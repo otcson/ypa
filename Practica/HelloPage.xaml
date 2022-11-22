@@ -1,0 +1,27 @@
+﻿<Page x:Class="Practica.HelloPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Practica"
+      mc:Ignorable="d" 
+      d:DesignHeight="416.803" d:DesignWidth="400.41"
+      Title="HelloPage" Width="400" Height="416">
+
+    <Grid Background="White" Margin="1,1,-3,0" RenderTransformOrigin="0.506,0.431" Height="414" VerticalAlignment="Top">
+
+        <Button Background="#bdb5ac" Height="50" Name="ToViewClient" Content="Клиент" Margin="0,182,127,182" Click="ToViewClient_Click" FontSize="20" BorderThickness="0,1,1,1" RenderTransformOrigin="0.5,0.5" FontFamily="Tahoma" HorizontalAlignment="Right" Width="150">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-2"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Image HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" Source="/beauty_logo.png"/>
+        <TextBlock Background="White" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="269" Margin="123,10,0,0" FontSize="20" FontFamily="Tahoma" FontWeight="Bold"><Run Text="Салон красоты "/><Run Language="ru-ru" Text="&quot;М"/><Run Text="ордочка"/><Run Language="ru-ru" Text="&quot;"/><LineBreak/><Run/></TextBlock>
+        <Button Background="#bdb5ac" Content="Посещения" Margin="126,271,0,93" Click="Button_Click" FontSize="20" FontFamily="Tahoma" HorizontalAlignment="Left" Width="150"/>
+    </Grid>
+</Page>
